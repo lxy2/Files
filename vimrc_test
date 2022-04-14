@@ -1,0 +1,9 @@
+set nu
+set hlsearch
+syntax on
+set list
+set listchars=tab:>~,trail:~
+
+if &diff
+    clorscheme evening
+endif
