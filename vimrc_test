@@ -1,3 +1,4 @@
+### vim ~/.vimrc
 set nu
 set hlsearch
 syntax on
@@ -7,3 +8,7 @@ set listchars=tab:>~,trail:~
 if &diff
     clorscheme evening
 endif
+
+
+### vim ~/.bashrc
+PS1='xxxxxxxx\u@~:\$ '
