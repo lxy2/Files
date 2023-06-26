@@ -12,3 +12,7 @@ endif
 
 ### vim ~/.bashrc
 PS1='xxxxxxxx\u@~:\$ '
+
+### sudo vim /etc/ssh/sshd_config
+ClientAliveInterval 60
+ClientAliveCountMax 600
