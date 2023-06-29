@@ -16,3 +16,13 @@ PS1='xxxxxxxx\u@~:\$ '
 ### sudo vim /etc/ssh/sshd_config
 ClientAliveInterval 60
 ClientAliveCountMax 600
+
+service sshd restart
+
+###
+ulimit -c unlimited
+vim /etc/security/limits.conf 
+*     soft   core unlimited
+*     hard  core unlimited
+
+echo "/home/corefiles/core-%e-%p-%t" > /proc/sys/kernel/core_pattern 
